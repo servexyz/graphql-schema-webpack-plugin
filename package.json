@@ -1,0 +1,16 @@
+{
+  "name": "graphql-schema-webpack-plugin",
+  "version": "1.0.0",
+  "description": "Update local GraphQL schema file",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server"
+  },
+  "author": "@alechp",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "webpack": "^2.5.1",
+    "webpack-dev-server": "^2.4.5"
+  }
+}
