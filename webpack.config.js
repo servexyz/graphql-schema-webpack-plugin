@@ -1,6 +1,6 @@
+require('dotenv').config()
 const GraphQLSchemaPlugin = require('./plugin/GraphQLSchemaPlugin');
 const path = require('path');
-const GQL_ENDPOINT=process.env.
 
 module.exports = {
   entry: {
@@ -12,7 +12,9 @@ module.exports = {
   },
   plugins: [
     new GraphQLSchemaPlugin({
-      uri: process.env.GQL_ENDPOINT
+      uri: process.env.GRAPHQL_ENDPOINT,
+      name: process.env.GRAPHQL_SCHEMA_FILE_NAME,
+      path: process.env.GRAPHQL_SCHEMA_FILE_PATH,
     }),
   ],
 }
